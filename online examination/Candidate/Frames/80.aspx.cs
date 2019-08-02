@@ -68,6 +68,9 @@ namespace online_examination.Candidate.Frames
         protected void Button31_Click(object sender, EventArgs e)
         {
 
+
+
+
         }
     }
     }

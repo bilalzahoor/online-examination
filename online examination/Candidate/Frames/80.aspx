@@ -15,8 +15,11 @@
         .auto-style3 {
             height: 25px;
         }
-        .auto-style4 {
-            margin-left: 131px;
+        .auto-style5 {
+            width: 405px;
+        }
+        .newStyle1 {
+            float: right;
         }
     </style>
 </head>
@@ -31,7 +34,7 @@
                 <td rowspan="11">
                     <asp:Panel ID="Panel1" runat="server">
                     </asp:Panel>
-                    <asp:Panel ID="Panel2" runat="server" Height="262px" Width="240px" CssClass="auto-style4">
+                    <asp:Panel ID="Panel2" runat="server" Height="262px" Width="240px" CssClass="newStyle1">
                         <asp:Label ID="Select" runat="server" Text="SELECT QUESTION :"></asp:Label>
                         <br />
                         <br />
@@ -109,13 +112,13 @@
                 <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
                     <asp:Button ID="Save" runat="server" Text="Save" Width="73px" />
                 </td>
-                <td>
+                <td class="auto-style5">
                     <asp:Button ID="Button2" runat="server" Text="Next" OnClick="Button2_Click" Width="73px" />
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>
+                <td class="auto-style5">
                     &nbsp;</td>
             </tr>
         </table>

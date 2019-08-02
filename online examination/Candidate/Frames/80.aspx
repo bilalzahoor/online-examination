@@ -106,7 +106,7 @@
                 <td colspan="2">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
                     <asp:Button ID="Save" runat="server" Text="Save" Width="73px" />
                 </td>
                 <td>

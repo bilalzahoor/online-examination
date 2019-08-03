@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
 </head>
-    <frameset rows="10%,90%">
+    <frameset rows="13%,87%">
 
         <frame src="../Candidate/Frames/10.aspx"/>
         <frame src="../Candidate/Frames/80.aspx" />

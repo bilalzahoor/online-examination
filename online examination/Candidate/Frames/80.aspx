@@ -8,6 +8,7 @@
     <style type="text/css">
         .auto-style1 {
             width: 100%;
+            height: 346px;
         }
         .auto-style2 {
             width: 169px;
@@ -42,7 +43,18 @@
                 <td rowspan="11">
                     <asp:Panel ID="Panel1" runat="server">
                     </asp:Panel>
-                    <asp:Panel ID="Panel2" runat="server" Height="262px" Width="240px" CssClass="newStyle1" BorderStyle="Solid">
+                    <asp:Panel ID="Panel2" runat="server" Height="375px" Width="240px" CssClass="newStyle1" BorderStyle="Solid">
+                        <asp:Panel ID="Panel3" runat="server" Height="138px" BorderStyle="Inset">
+                            DEMO:<br /> <br />
+                            <asp:Button ID="D1" runat="server" Text="1" Width="26px" BackColor="Green" Height="17px"/>
+                            &nbsp;Saved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:Button ID="D2" runat="server" Text="2" Width="26px" BackColor="Red" Height="18px"/>
+                            Visited But Not Saved<br />
+                            <asp:Button ID="D3" runat="server" BackColor="Purple" Height="19px" Text="3" Width="26px" />
+                            Selected But Not Saved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:Button ID="D4" runat="server" Text="4" Width="26px" Height="18px"/>
+                            Not Visited</asp:Panel>
+                        <br />
                         <asp:Label ID="Select" runat="server" Text="SELECT QUESTION :"></asp:Label>
                         <br />
                         <br />

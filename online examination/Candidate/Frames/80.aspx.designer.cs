@@ -391,21 +391,21 @@ namespace online_examination.Candidate.Frames {
         protected global::System.Web.UI.WebControls.RadioButton D;
         
         /// <summary>
-        /// Save control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Save;
+        protected global::System.Web.UI.WebControls.Button btnSave;
         
         /// <summary>
-        /// Button2 control.
+        /// btnNext control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnNext;
     }
 }

@@ -21,6 +21,14 @@
         .newStyle1 {
             float: right;
         }
+        .auto-style6 {
+            width: 169px;
+            height: 35px;
+        }
+        .auto-style7 {
+            width: 405px;
+            height: 35px;
+        }
     </style>
 </head>
 <body>
@@ -34,15 +42,15 @@
                 <td rowspan="11">
                     <asp:Panel ID="Panel1" runat="server">
                     </asp:Panel>
-                    <asp:Panel ID="Panel2" runat="server" Height="262px" Width="240px" CssClass="newStyle1">
+                    <asp:Panel ID="Panel2" runat="server" Height="262px" Width="240px" CssClass="newStyle1" BorderStyle="Solid">
                         <asp:Label ID="Select" runat="server" Text="SELECT QUESTION :"></asp:Label>
                         <br />
                         <br />
-                        <asp:Button ID="Q1" runat="server" Text="1" Width="30px" />
-                        <asp:Button ID="Q2" runat="server" Text="2" Width="30px" />
-                        <asp:Button ID="Q3" runat="server" Text="3" Width="30px" />
-                        <asp:Button ID="Q4" runat="server" Text="4" Width="30px" />
-                        <asp:Button ID="Q5" runat="server" Text="5" Width="30px" />
+                        <asp:Button ID="Q1" runat="server" Text="1" Width="30px" OnClick="QuestionClick" />
+                        <asp:Button ID="Q2" runat="server" Text="2" Width="30px" OnClick="QuestionClick" />
+                        <asp:Button ID="Q3" runat="server" Text="3" Width="30px" OnClick="QuestionClick" />
+                        <asp:Button ID="Q4" runat="server" Text="4" Width="30px" OnClick="QuestionClick" />
+                        <asp:Button ID="Q5" runat="server" Text="5" Width="30px" OnClick="QuestionClick" />
                         <asp:Button ID="Q6" runat="server" Text="6" Width="30px" />
                         <asp:Button ID="Q7" runat="server" Text="7" Width="30px" />
                         <asp:Button ID="Q8" runat="server" Text="8" Width="30px" />
@@ -65,8 +73,8 @@
                         <asp:Button ID="Q25" runat="server" Text="25" Width="30px" />
                         <asp:Button ID="Q26" runat="server" Text="26" Width="30px" />
                         <asp:Button ID="Q27" runat="server" Text="27" Width="30px" />
-                        <asp:Button ID="Q28" runat="server" OnClick="Button31_Click" Text="28" Width="30px" />
-                        <asp:Button ID="Q29" runat="server" OnClick="Button32_Click" Text="29" Width="30px" />
+                        <asp:Button ID="Q28" runat="server" Text="28" Width="30px" />
+                        <asp:Button ID="Q29" runat="server" Text="29" Width="30px" />
                         <asp:Button ID="Q30" runat="server" Text="30" Width="30px" />
                     </asp:Panel>
                     </td>
@@ -109,11 +117,11 @@
                 <td colspan="2">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-                    <asp:Button ID="Save" runat="server" Text="Save" Width="73px" />
+                <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnSave" runat="server" Text="Save" Width="73px" OnClick="Save_Click" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
                 </td>
-                <td class="auto-style5">
-                    <asp:Button ID="Button2" runat="server" Text="Next" OnClick="Button2_Click" Width="73px" />
+                <td class="auto-style7">
+                    <asp:Button ID="btnNext" runat="server" Text="Next" OnClick="NextClick" Width="73px" />
                 </td>
             </tr>
             <tr>

@@ -12,6 +12,7 @@ namespace online_examination.Candidate.Frames
     {
          SqlConnection con;
          string qid;
+        Button clickedButton;
         protected void Page_Load(object sender, EventArgs e)
         {
             con = new SqlConnection(@"Data Source = SUHAIL\SQLEXPRESS; Initial Catalog = online examination; Integrated Security = True");
@@ -22,7 +23,8 @@ namespace online_examination.Candidate.Frames
                 Application["QuestionNo"] = 1;
             }
             showQuestion(Application["QuestionNo"].ToString(), Application["Subject"].ToString());
-
+            if(clickedButton==null)
+                 clickedButton = Q1;
         }
         public  void showQuestion(string no, string sub)
         {
@@ -53,24 +55,32 @@ namespace online_examination.Candidate.Frames
             }
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void NextClick(object sender, EventArgs e)
         {
             Application["QuestionNo"] = Convert.ToInt32 (Application["QuestionNo"])+1;
             showQuestion(Application["QuestionNo"].ToString(), Application["Subject"].ToString());
             
         }
 
-        protected void Button32_Click(object sender, EventArgs e)
+        protected void QuestionClick(object sender, EventArgs e)
         {
+            Button btn = (Button)sender;
+           // clickedButton.BackColor = System.Drawing.Color.Red;
+            Application["QuestionNo"] = btn.Text;
+            showQuestion(Application["QuestionNo"].ToString(), Application["Subject"].ToString());
+            if (clickedButton.BackColor != System.Drawing.Color.Green) {
+                clickedButton.BackColor = System.Drawing.Color.Red;
 
+            }
+            clickedButton = btn;
         }
 
-        protected void Button31_Click(object sender, EventArgs e)
+        protected void Save_Click(object sender, EventArgs e)
         {
-
-
-
-
+            if (clickedButton != null)
+            {
+                clickedButton.BackColor = System.Drawing.Color.Green;
+            }
         }
     }
     }
